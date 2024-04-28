@@ -92,7 +92,7 @@
 })();
 ```
 
-# 2. ADIM
+# ADIM 2 (BETİK 2)
 
 <p>- Kopyaladığın isimleri şimdi bu kodun içerisine ekleyeceğiz.</p>
 <p>- Teni betik oluşturun</p>
@@ -139,7 +139,7 @@
 ```
 
 
-# KISIM 3 (BETİK 3)
+# ADIM 3 (BETİK 3)
 
 <p>- BGY'deki herkesin listede kaldığına emin olduysanız aşağıdaki 3. betiği de eklemeye hazırsınız</p>
 <p>- F2 ile silmeye başlar sırayla.</p>
