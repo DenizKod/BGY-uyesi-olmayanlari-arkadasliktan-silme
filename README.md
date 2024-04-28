@@ -4,6 +4,7 @@
 
 <p>- Facebook dilini Türkçe yap</p>
 <p>- BGY üyelerini topladığınız bölümü tek seferde yapın ve bitirin. birden fazla kez yapınca BGY üyeler/arkadaşlarım kısmına girdiğinizde "çok fazla denediniz" hatası alıyorsunuz</p>
+<p>- Zor gibi gözüksede aslında hiç değil. tüm adımları doğru yaparsanız çok basit</p>
 
 # ADIM 1 (BETİK 1)
 
@@ -15,7 +16,7 @@
 
 ![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/1a092988-0365-4e0e-83d0-d4f43e7b6eab)
 
-<p>- Bir metin belgesi açın Ctrl + V ile isimleri yapıştırın. lisenin en başındaki ismi bulun ardından onun gerisindeki tüm gereksiz yazıları silin. listede sadece isimlerin virgül virgül ayrı ayrı yazdığına emin olun.</p>
+<p>- Bir metin belgesi açın Ctrl + V ile isimleri yapıştırın. ve listenin doğru kopyalandığına emin olun. Listedeki en baştaki isimle son üyenin isminni eşleştiğini kontrol edin</p>
 
 ![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/035dc174-8b64-41ca-969f-d3805b964faa)
 
