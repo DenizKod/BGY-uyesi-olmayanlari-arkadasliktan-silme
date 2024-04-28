@@ -97,8 +97,8 @@
 # ADIM 2 (BETİK 2)
 
 <p>- Kopyaladığın isimleri şimdi bu kodun içerisine ekleyeceğiz.</p>
-<p>- Yeni betik oluşturun</p>
-<p>- 2. betiğin kodunda bu kısmı bulun : const gizlenecekKullaniciAdlariString = "İsim 1, İsim 2, İsim 3, İsim4"; sizin kopyaladığınız virgülle ayrılmış isimleri çift tırnağın arasına ekleyin</p>
+<p>- Tekrar 2. bir yeni betik oluşturun</p>
+<p>- 2. betiğin kodunda bu kısmı bulun : const gizlenecekKullaniciAdlariString = "İsim 1, İsim 2, İsim 3, İsim4"; ve az önce sizin kopyaladığınız virgülle ayrılmış isimleri çift tırnağın arasına ekleyin</p>
 
 ![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/d2049898-5da0-485f-8512-155b9cda6467)
 
