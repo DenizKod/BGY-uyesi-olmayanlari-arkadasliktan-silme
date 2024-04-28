@@ -171,6 +171,7 @@
     });
 
     let isRunning = false;
+    let triedToRemove = new Set();  // Zaten silinmeye çalışılmış arkadaşları takip etmek için
 
     function startRemovingFriends() {
         isRunning = true;
@@ -184,26 +185,26 @@
     function removeNextFriend() {
         if (!isRunning) return;
 
-        const friendButton = document.querySelector('div[aria-label="Arkadaşlar"]');
+        const allFriendButtons = Array.from(document.querySelectorAll('div[aria-label="Arkadaşlar"]'));
+        const friendButton = allFriendButtons.find(button => !triedToRemove.has(button));
+
         if (friendButton) {
+            triedToRemove.add(friendButton);  // Bu arkadaşı işaretleyerek gelecekte tekrar denemeyi önle
             friendButton.click();
 
             setTimeout(() => {
                 const allMenuItems = Array.from(document.querySelectorAll('[role="menuitem"]'));
-                const removeOption = allMenuItems.find(item => {
-                    const label = item.textContent || item.innerText;
-                    return label.includes("Arkadaşlarımdan Çıkar");
-                });
+                const removeOption = allMenuItems.find(item => item.textContent.includes("Arkadaşlarımdan Çıkar"));
 
                 if (removeOption) {
                     removeOption.click();
                     console.log("Arkadaşlarımdan Çıkar seçeneği tıklandı.");
-                    setTimeout(confirmDeletion, 500);  // Ekstra zaman, menü kapanmasını beklemek için
+                    setTimeout(confirmDeletion, 500);
                 } else {
                     console.log("Arkadaşlarımdan Çıkar seçeneği bulunamadı.");
-                    setTimeout(removeNextFriend, 1500);  // Bir sonraki arkadaşı denemek için
+                    handlePopupError();
                 }
-            }, 1000); // Menü açılmasını beklemek için süre
+            }, 1000);
         } else {
             console.log("Daha fazla arkadaş butonu bulunamadı.");
         }
@@ -214,13 +215,20 @@
         if (confirmButton) {
             confirmButton.click();
             console.log("Onayla butonuna basıldı.");
-            setTimeout(() => {
-                removeNextFriend();  // Sonraki silme işlemine geç
-            }, 1500);  // Onaydan sonra ekstra 2 saniye gecikme
+            setTimeout(removeNextFriend, 1500);
         } else {
             console.log("Onayla butonu bulunamadı.");
-            setTimeout(removeNextFriend, 1500);  // Yine denemek için bir gecikme
+            handlePopupError();
         }
+    }
+
+    function handlePopupError() {
+        const errorButton = document.querySelector('span[class*="Tamam"]');
+        if (errorButton) {
+            errorButton.click();
+            console.log("Hata mesajı 'Tamam' butonu tıklandı, devam ediliyor.");
+        }
+        setTimeout(removeNextFriend, 10);
     }
 })();
 ```
