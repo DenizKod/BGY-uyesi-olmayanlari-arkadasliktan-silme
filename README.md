@@ -224,4 +224,12 @@
     }
 })();
 ```
+DİKKAT : Bazı kişilerin profili "facebook tarafından banlandığı için o kişileri silemiyorsunuz"
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/baa299f3-c8f7-4f7e-bed4-58d829308df4)
+
+Bu hatayı aldıktan sonra "TAMAM" butonuna basınca manuel olarak görseldeki kırmızı işaretli butona basın
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/9cb56c73-28b0-4eb6-922a-9a11a9614f95)
+
 ### NOT : İhlal yememek için kodun içerisine bekleme süresi ekledim. insana yakın hızda siliyor.
