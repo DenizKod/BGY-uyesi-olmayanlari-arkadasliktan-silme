@@ -144,7 +144,6 @@
 # ADIM 3 (BETİK 3)
 
 <p>- BGY'deki herkesin listede kaldığına emin olduysanız aşağıdaki 3. betiği de eklemeye hazırsınız</p>
-<p>- F2 ile silmeye başlar sırayla.</p>
 
 **ARKADAŞLARI OTOMATİK SİLME BETİĞİ (BETİK 3)**
 
