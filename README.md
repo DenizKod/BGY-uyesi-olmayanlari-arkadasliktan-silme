@@ -238,7 +238,10 @@
 <p>- Listenin en en en en en altına indikten sonra F6 tuşuna basın. böylelikle az önce BGY'de isimlerini kopyaladığınız herkes arkadaş listesinden kaybolacak (sayfa yenilene kadar kaybolurlar)</p>
 <p>- Herkesin kaybolduğuna emin olduysanız F2 tuşuna basarak silme işlemine başlayın.</p>
 
-DİKKAT : Bazı kişilerin profili "facebook tarafından banlandığı için o kişileri silemiyorsunuz"
+
+
+
+### DİKKAT : Bazı kişilerin profili "facebook tarafından banlandığı için o kişileri silemiyorsunuz"
 
 ![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/baa299f3-c8f7-4f7e-bed4-58d829308df4)
 
