@@ -10,18 +10,11 @@
 
 <p>- Tampermonkey eklentisini tarayıcına ekle</p>
 <p>- Yeni Betik oluştur (3 adet ayrı betik oluşturacağız ama şimdilik 1 tane oluşturun)</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/ce9438ec-8c41-4d19-8d6a-bbd49b7285a6)
+
 <p>- Aşağıdaki kodu kopyalayın ve betik oluşturma sayfasına yapıştırın (betiğin içinde "dosya" yazan yere tıklayıp kaydet basın)</p>
-<p>- Bu adrese git : https://www.facebook.com/groups/bgyagain3/members/friends</p>
-<p>- Listenin sonuna gidene kadar en aşağı kaydırın. ardından listenin ortasına sayfa kapanmayacak şekilde 1 kere tıklayın. f8 tuşuna basın.</p>
 
-![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/1a092988-0365-4e0e-83d0-d4f43e7b6eab)
-
-<p>- Bir metin belgesi açın Ctrl + V ile isimleri yapıştırın. ve listenin doğru kopyalandığına emin olun. Listedeki en baştaki isimle son üyenin isminni eşleştiğini kontrol edin</p>
-
-![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/035dc174-8b64-41ca-969f-d3805b964faa)
-
-
-**ÜYELERİ TOPLAMA BETİĞİ KODU**
 ```
 // ==UserScript==
 // @name         Facebook Üye İsim Kopyalayıcı
@@ -91,6 +84,15 @@
     }
 })();
 ```
+<p>- Bu adrese git : https://www.facebook.com/groups/bgyagain3/members/friends</p>
+<p>- Listenin sonuna gidene kadar en aşağı kaydırın. ardından listenin ortasına sayfa kapanmayacak şekilde 1 kere tıklayın. f8 tuşuna basın.</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/1a092988-0365-4e0e-83d0-d4f43e7b6eab)
+
+<p>- Bir metin belgesi açın Ctrl + V ile isimleri yapıştırın. ve listenin doğru kopyalandığına emin olun. Listedeki en baştaki isimle son üyenin isminni eşleştiğini kontrol edin</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/035dc174-8b64-41ca-969f-d3805b964faa)
+
 
 # ADIM 2 (BETİK 2)
 
