@@ -1,4 +1,9 @@
-# FacebookBGY
+# BGY DIŞI HERKESI OTOMATIK SILME
+
+### BAŞLAMADAN ÖNCE OKU
+
+<p>- Facebook dilini Türkçe yap</p>
+<p>- BGY üyelerini topladığınız bölümü tek seferde yapın ve bitirin. birden fazla kez yapınca BGY üyeler/arkadaşlarım kısmına girdiğinizde "çok fazla denediniz" hatası alıyorsunuz</p>
 
 # ADIM 1 (BETİK 1)
 
@@ -7,7 +12,13 @@
 <p>- Aşağıdaki kodu kopyalayın ve betik oluşturma sayfasına yapıştırın (betiğin içinde "dosya" yazan yere tıklayıp kaydet basın)</p>
 <p>- Bu adrese git : https://www.facebook.com/groups/bgyagain3/members/friends</p>
 <p>- Listenin sonuna gidene kadar en aşağı kaydırın. ardından listenin ortasına sayfa kapanmayacak şekilde 1 kere tıklayın. f8 tuşuna basın.</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/1a092988-0365-4e0e-83d0-d4f43e7b6eab)
+
 <p>- Bir metin belgesi açın Ctrl + V ile isimleri yapıştırın. lisenin en başındaki ismi bulun ardından onun gerisindeki tüm gereksiz yazıları silin. listede sadece isimlerin virgül virgül ayrı ayrı yazdığına emin olun.</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/035dc174-8b64-41ca-969f-d3805b964faa)
+
 
 **ÜYELERİ TOPLAMA BETİĞİ KODU**
 ```
@@ -84,7 +95,11 @@
 
 <p>- Kopyaladığın isimleri şimdi bu kodun içerisine ekleyeceğiz.</p>
 <p>- Teni betik oluşturun</p>
-<p>- 2. betiğin kodunda bu kısmı bulun : const gizlenecekKullaniciAdlariString = "Sefa Morgan, エレ ン, Cihangir Hürremi, Atom Ali"; ARDINDAN ve sizin kopyaladığınız virgülle ayrılmış isimleri "isim, isim, isim" çift tırnağın arasına ekleyin ve kaydedin</p>
+<p>- 2. betiğin kodunda bu kısmı bulun : const gizlenecekKullaniciAdlariString = "İsim 1, İsim 2, İsim 3, İsim4"; sizin kopyaladığınız virgülle ayrılmış isimleri çift tırnağın arasına ekleyin</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/d2049898-5da0-485f-8512-155b9cda6467)
+
+
 <p>- Profilinize gidip arkadaşlarınıza girin en alta kadar inin. en alta indiğinizde sayfanın ortasına 1 kere kapanmayacak şekilde tıklayın. F6 tuşuna basın.</p>
 <p>- Lisedeki isimler silindiyse 3. betiğe geçebiliriz</p>
 
@@ -103,7 +118,7 @@
     'use strict';
 
     // Tüm isimler tek bir string içinde, virgülle ayrılmış şekilde
-    const gizlenecekKullaniciAdlariString = "Sefa Morgan, エレ ン, Cihangir Hürremi, Atom Ali";
+    const gizlenecekKullaniciAdlariString = "İsim 1, İsim 2, İsim 3, İsim4";
     // String'i virgülle ayırarak diziye dönüştür
     const gizlenecekKullaniciAdlari = gizlenecekKullaniciAdlariString.split(", ");
 
