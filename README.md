@@ -98,13 +98,8 @@
 
 <p>- Kopyaladığın isimleri şimdi bu kodun içerisine ekleyeceğiz.</p>
 <p>- Tekrar 2. bir yeni betik oluşturun</p>
-<p>- 2. betiğin kodunda bu kısmı bulun : const gizlenecekKullaniciAdlariString = "İsim 1, İsim 2, İsim 3, İsim4"; ve az önce sizin kopyaladığınız virgülle ayrılmış isimleri çift tırnağın arasına ekleyin</p>
 
-![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/d2049898-5da0-485f-8512-155b9cda6467)
-
-
-<p>- Profilinize gidip arkadaşlarınıza girin en alta kadar inin. en alta indiğinizde sayfanın ortasına 1 kere kapanmayacak şekilde tıklayın. F6 tuşuna basın.</p>
-<p>- Lisedeki isimler silindiyse 3. betiğe geçebiliriz</p>
+### 2. kodu da yeni oluşturduğunuz betik sayfasına yapıştırın ama kaydetmeyin. çünkü kodun altında ne yapmanız gerektiğini anlatacağım.
 
 ```
 // ==UserScript==
@@ -139,6 +134,11 @@
     });
 })();
 ```
+
+<p>- 2. betiğin kodunda bu kısmı bulun : const gizlenecekKullaniciAdlariString = "İsim 1, İsim 2, İsim 3, İsim4"; ve az önce sizin kopyaladığınız virgülle ayrılmış isimleri çift tırnağın arasına ekleyin</p>
+
+![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/d2049898-5da0-485f-8512-155b9cda6467)
+
 
 
 # ADIM 3 (BETİK 3)
@@ -234,6 +234,10 @@
     }
 })();
 ```
+<p>- Bu koduda 3. betik olarak Tampermonkey'e ekledikten sonra profilinize gidin ve arkadaşların olduğu kısma girin</p>
+<p>- Listenin en en en en en altına indikten sonra F6 tuşuna basın. böylelikle az önce BGY'de isimlerini kopyaladığınız herkes arkadaş listesinden kaybolacak (sayfa yenilene kadar kaybolurlar)</p>
+<p>- Herkesin kaybolduğuna emin olduysanız F2 tuşuna basarak silme işlemine başlayın.</p>
+
 DİKKAT : Bazı kişilerin profili "facebook tarafından banlandığı için o kişileri silemiyorsunuz"
 
 ![image](https://github.com/DenizKod/FacebookBGY/assets/168285638/baa299f3-c8f7-4f7e-bed4-58d829308df4)
