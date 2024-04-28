@@ -147,7 +147,6 @@
 **ARKADAŞLARI OTOMATİK SİLME BETİĞİ (BETİK 3)**
 
 ```
-
 // ==UserScript==
 // @name         Arkadaş Listesinden Otomatik Silme
 // @namespace    http://tampermonkey.net/
@@ -161,67 +160,68 @@
 (function() {
     'use strict';
 
-   document.addEventListener('keydown', function(e) {
-    if (e.key === 'F2') {
-        console.log("Silme işlemi başlatıldı.");
-        startRemovingFriends();
-    } else if (e.key === 'F4') {
-        console.log("Silme işlemi durduruldu.");
-        stopRemovingFriends();
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'F2') {
+            console.log("Silme işlemi başlatıldı.");
+            startRemovingFriends();
+        } else if (e.key === 'F4') {
+            console.log("Silme işlemi durduruldu.");
+            stopRemovingFriends();
+        }
+    });
+
+    let isRunning = false;
+
+    function startRemovingFriends() {
+        isRunning = true;
+        removeNextFriend();
     }
-});
 
-let isRunning = false;
-
-function startRemovingFriends() {
-    isRunning = true;
-    removeNextFriend();
-}
-
-function stopRemovingFriends() {
-    isRunning = false;
-}
-
-function removeNextFriend() {
-    if (!isRunning) return;
-
-    const friendButton = document.querySelector('div[aria-label="Arkadaşlar"]');
-    if (friendButton) {
-        friendButton.click();
-
-        setTimeout(() => {
-            const allMenuItems = Array.from(document.querySelectorAll('[role="menuitem"]'));
-            const removeOption = allMenuItems.find(item => {
-                const label = item.textContent || item.innerText;
-                return label.includes("Arkadaşlarımdan Çıkar");
-            });
-
-            if (removeOption) {
-                removeOption.click();
-                console.log("Arkadaşlarımdan Çıkar seçeneği tıklandı.");
-                setTimeout(confirmDeletion, 500);  // Ekstra zaman, menü kapanmasını beklemek için
-            } else {
-                console.log("Arkadaşlarımdan Çıkar seçeneği bulunamadı.");
-                setTimeout(removeNextFriend, 1500);  // Bir sonraki arkadaşı denemek için
-            }
-        }, 1000); // Menü açılmasını beklemek için süre
-    } else {
-        console.log("Daha fazla arkadaş butonu bulunamadı.");
+    function stopRemovingFriends() {
+        isRunning = false;
     }
-}
 
-function confirmDeletion() {
-    const confirmButton = document.querySelector('div[aria-label="Onayla"]');
-    if (confirmButton) {
-        confirmButton.click();
-        console.log("Onayla butonuna basıldı.");
-        setTimeout(() => {
-            removeNextFriend();  // Sonraki silme işlemine geç
-        }, 100);  // Onaydan sonra kısa bir gecikme
-    } else {
-        console.log("Onayla butonu bulunamadı.");
-        setTimeout(removeNextFriend, 1500);  // Yine denemek için bir gecikme
+    function removeNextFriend() {
+        if (!isRunning) return;
+
+        const friendButton = document.querySelector('div[aria-label="Arkadaşlar"]');
+        if (friendButton) {
+            friendButton.click();
+
+            setTimeout(() => {
+                const allMenuItems = Array.from(document.querySelectorAll('[role="menuitem"]'));
+                const removeOption = allMenuItems.find(item => {
+                    const label = item.textContent || item.innerText;
+                    return label.includes("Arkadaşlarımdan Çıkar");
+                });
+
+                if (removeOption) {
+                    removeOption.click();
+                    console.log("Arkadaşlarımdan Çıkar seçeneği tıklandı.");
+                    setTimeout(confirmDeletion, 500);  // Ekstra zaman, menü kapanmasını beklemek için
+                } else {
+                    console.log("Arkadaşlarımdan Çıkar seçeneği bulunamadı.");
+                    setTimeout(removeNextFriend, 1500);  // Bir sonraki arkadaşı denemek için
+                }
+            }, 1000); // Menü açılmasını beklemek için süre
+        } else {
+            console.log("Daha fazla arkadaş butonu bulunamadı.");
+        }
     }
-}
+
+    function confirmDeletion() {
+        const confirmButton = document.querySelector('div[aria-label="Onayla"]');
+        if (confirmButton) {
+            confirmButton.click();
+            console.log("Onayla butonuna basıldı.");
+            setTimeout(() => {
+                removeNextFriend();  // Sonraki silme işlemine geç
+            }, 1500);  // Onaydan sonra ekstra 2 saniye gecikme
+        } else {
+            console.log("Onayla butonu bulunamadı.");
+            setTimeout(removeNextFriend, 1500);  // Yine denemek için bir gecikme
+        }
+    }
 })();
 ```
+### NOT : İhlal yememek için kodun içerisine bekleme süresi ekledim. insana yakın hızda siliyor.
